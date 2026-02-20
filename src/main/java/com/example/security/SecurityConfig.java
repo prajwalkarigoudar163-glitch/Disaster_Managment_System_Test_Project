@@ -29,6 +29,9 @@ public class SecurityConfig {
                     .requestMatchers("/api/auth/**").permitAll()  // login & register open
                     .requestMatchers("/api/admin/**").hasRole("ADMIN")
                     .requestMatchers("/api/profile/**").authenticated()
+                    .requestMatchers("/api/weather/**").permitAll()
+                    .requestMatchers("/api/earthquake/**").permitAll()
+                    .requestMatchers("/api/nasa-flood/**").permitAll()
                     .anyRequest().authenticated()
             );
 
