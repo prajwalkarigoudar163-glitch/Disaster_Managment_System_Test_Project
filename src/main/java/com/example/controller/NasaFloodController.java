@@ -4,7 +4,6 @@ import com.example.external.NasaFloodService;
 
 import java.util.List;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
